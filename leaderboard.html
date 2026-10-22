@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🏆 Рейтинг — Матвей</title>
+<style>
+body{margin:0;padding:20px;background:#171923;color:white;font-family:Arial,sans-serif}
+h1{text-align:center;font-size:25px}
+p{text-align:center;color:#bbb}
+.item{display:flex;align-items:center;gap:12px;background:#282c3a;padding:15px;margin:9px 0;border-radius:12px}
+.num{font-size:20px;font-weight:bold;min-width:30px}
+.name{flex:1;overflow-wrap:anywhere}
+.score{font-weight:bold;color:#ffd166}
+button{width:100%;padding:14px;border:0;border-radius:10px;background:#7357ff;color:white;font-size:16px}
+</style>
+</head>
+<body>
+<h1>🏆 Онлайн-рейтинг</h1>
+<p>Лучшие игроки по ELO</p>
+<button onclick="load()">🔄 Обновить рейтинг</button>
+<div id="list"><p>Загрузка...</p></div>
+<script>
+const URL='https://jzurnmidajjhzbaggqek.supabase.co';
+const KEY='sb_publishable__1fp_hTi-m40kJ7qyyA4ow_aG8It
